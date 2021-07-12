@@ -1,0 +1,86 @@
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .box:nth-child(3) {
+    max-width: 708px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: 500px !important;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 150px;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.box {
+  background-color: gray;
+  text-align: center;
+  height: 200px;
+  width: 300px;
+  margin: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.box > p {
+  text-align: center;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+.box > span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  width: 100px;
+  height: 30px;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+.box p {
+  padding-top: 20px;
+}
+
+.box:nth-child(2) span {
+  color: white;
+}
+
+#id1 > span:nth-child(1) {
+  background-color: pink;
+}
+
+#id2 > span:nth-child(1) {
+  background-color: red;
+}
+
+#id3 > span:nth-child(1) {
+  background-color: yellow;
+}
